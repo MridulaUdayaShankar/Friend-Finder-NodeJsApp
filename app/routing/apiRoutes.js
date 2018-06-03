@@ -11,7 +11,7 @@ var surveyResult = req.params.surveyResult;
 console.log("Survey Result is: ", req.params.surveyResult);
 // if (surveyResult === //somebody's survey result)
 {
-// display your match found! 
-// display modal
+// display- your match found! 
+// display- modal
 }
 });

@@ -6,15 +6,13 @@
 
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 
     <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <!-- Chosen -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 </head>
 
@@ -30,13 +28,14 @@
                 <input type="text" id="name" class="form-control" required="">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Link to Photo Image(Required): </label>
+                <label for="exampleFormControlInput1">Submit a link to your picture(Required): </label>
                 <input type="text" id="photo" class="form-control" required="">
             </div>
 
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 1</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control question" id="question1">
+                    <option selected>Choose</option>
                     <option>1(Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -46,7 +45,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 2</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control question" id="question2">
+                    <option selected>Choose</option>
                     <option>1(Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -56,7 +56,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 3</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control question" id="question3">
+                    <option selected>Choose</option>
                     <option>1(Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -66,7 +67,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 4</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control question" id="question4">
+                    <option selected>Choose</option>
                     <option>1(Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -76,7 +78,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 5</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control question" id="question5">
+                    <option selected>Choose</option>
                     <option>1(Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -86,7 +89,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 6</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control question" id="question6">
+                    <option selected>Choose</option>
                     <option>1(Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -96,7 +100,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 7</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control question" id="question7">
+                    <option selected>Choose</option>
                     <option>1(Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -106,7 +111,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 8</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control question" id="question8">
+                    <option selected>Choose</option>
                     <option>1(Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -116,7 +122,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 9</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control question" id="question9">
+                    <option selected>Choose</option>
                     <option>1(Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -126,7 +133,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 10</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control question" id="question10">
+                    <option selected>Choose</option>
                     <option>1(Strongly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -139,10 +147,10 @@
         <button type="submit" class="btn btn-primary" id="submit">Submit</button>
         <hr>
         <footer class="footer">
-            <div class="container">
-                <a href="/api/friends">API Friends List</a> |
-                <a href="https://github.com/MridulaUdayaShankar/Friend-Finder-NodeJsApp">GitHub Repo</a>
-            </div>
+                <a href="/api/friends">
+                    <span class="glyphicon glyphicon-info-sign"></span> API Friends List</a> |
+                <a href="https://github.com/MridulaUdayaShankar/Friend-Finder-NodeJsApp">
+                    <span class="glyphicon glyphicon-link"></span> GitHub Repo</a>
         </footer>
     </div>
 
@@ -165,9 +173,11 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-
-    </script>
+    <!-- javascript files -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
 </body>
 
 </html>

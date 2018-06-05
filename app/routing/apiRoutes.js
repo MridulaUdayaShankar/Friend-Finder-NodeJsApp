@@ -1,19 +1,19 @@
 var friends = require("../data/friends.js");
 
-module.exports = function(app) {
+module.exports = function (app) {
   // A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
-  app.get("/api/friends", function(req, res) {
+  app.get("/api/friends", function (req, res) {
     res.json(friends.scores);
   });
   // A POST routes /api/friends
-  app.post("/api/friends", function(req, res) {
+  app.post("/api/friends", function (req, res) {
     console.log('request body', req.body);
     // code to handle incoming survey results
     var result = req.body;
     var name = "";
     var photo = "";
-    Array.prototype.diff = function(a) {
-      return this.filter(function(i) {
+    Array.prototype.diff = function (a) {
+      return this.filter(function (i) {
         return a.indexOf(i) < 0;
       });
     };
@@ -24,7 +24,7 @@ module.exports = function(app) {
     //code to handle the compatibility logic
     var userScore = result.score;
     var friendsScore = friends.scores;
-    for(var i = 0; i < userScore.length; i++){
+    for (var i = 0; i < userScore.length; i++) {
       userScore[i] = Number(userScore[i]);
     }
     console.log('userScore', userScore);
@@ -42,13 +42,14 @@ module.exports = function(app) {
     //   }
     // }
     var topFriend, lowScore = 100;
-    friends.forEach(function(friend) {
-      var scoreArr = friend.scores.map(function(item, index) {
+    
+    friends.forEach(function (friend) {
+      var scoreArr = friend.scores.map(function (item, index) {
         return Math.abs(item - userScore[index]);
       });
       //sum of all elements in the array
       var score = scoreArr.reduce((x, y) => x + y);
-      if(score < lowScore){
+      if (score < lowScore) {
         topFriend = friend;
         lowScore = score;
       }
@@ -57,7 +58,7 @@ module.exports = function(app) {
     console.log('top friend', topFriend, lowScore);
 
     res.json({ name: topFriend.name, photo: topFriend.photo });
-    
+
     // friends.forEach(function(friend) {
     //   userScore.forEach(function(user) {
     //     console.log('**********', friend, friend.score);

@@ -198,13 +198,14 @@
                 score: ansArray
             };
             console.log('&&&&&&&', quizResult);
+
             $.post("/api/friends", quizResult, function (data) {
                 console.log(data)
                 if (data) {
                     console.log("data captured");
                     console.log(data)
                     $("#match-name").text(data.name);
-                    $("#match-img").attr("src", data.photo);
+                    $("#match-img").attr("src", data.photo);i
                     $("#match-modal").modal("toggle");
                 }
 

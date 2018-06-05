@@ -2,7 +2,7 @@ var friendsArray = [
   {
     name: "Rachel",
     photo:
-      "http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297953532006_ORIGINAL.jpg",
+      "https://s1.r29static.com//bin/entry/608/720x864,80/1839167/image.jpg",
     scores: [5, 2, 3, 4, 5, 1, 2, 3, 4, 1]
   },
   {

@@ -41,8 +41,8 @@ module.exports = function (app) {
     //     console.log(score);
     //   }
     // }
-    var topFriend, lowScore = 100;
-    
+    var topFriend, lowScore = 50;
+
     friends.forEach(function (friend) {
       var scoreArr = friend.scores.map(function (item, index) {
         return Math.abs(item - userScore[index]);

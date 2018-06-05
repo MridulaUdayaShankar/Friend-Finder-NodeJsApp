@@ -6,7 +6,10 @@
 
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+    <!-- javascript files -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
     <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -34,112 +37,112 @@
 
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 1</label>
-                <select class="form-control question" id="question1">
+                <select class="form-control question" id="question1" data-qId="0">
                     <option selected>Choose</option>
-                    <option>1(Strongly Disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5(Strongly Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 2</label>
-                <select class="form-control question" id="question2">
+                <select class="form-control question" id="question2" data-qId="1">
                     <option selected>Choose</option>
-                    <option>1(Strongly Disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5(Strongly Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 3</label>
-                <select class="form-control question" id="question3">
+                <select class="form-control question" id="question3" data-qId="2">
                     <option selected>Choose</option>
-                    <option>1(Strongly Disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5(Strongly Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 4</label>
-                <select class="form-control question" id="question4">
+                <select class="form-control question" id="question4" data-qId="3">
                     <option selected>Choose</option>
-                    <option>1(Strongly Disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5(Strongly Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 5</label>
-                <select class="form-control question" id="question5">
+                <select class="form-control question" id="question5" data-qId="4">
                     <option selected>Choose</option>
-                    <option>1(Strongly Disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5(Strongly Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 6</label>
-                <select class="form-control question" id="question6">
+                <select class="form-control question" id="question6" data-qId="5">
                     <option selected>Choose</option>
-                    <option>1(Strongly Disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5(Strongly Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 7</label>
-                <select class="form-control question" id="question7">
+                <select class="form-control question" id="question7" data-qId="6">
                     <option selected>Choose</option>
-                    <option>1(Strongly Disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5(Strongly Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 8</label>
-                <select class="form-control question" id="question8">
+                <select class="form-control question" id="question8" data-qId="7">
                     <option selected>Choose</option>
-                    <option>1(Strongly Disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5(Strongly Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 9</label>
-                <select class="form-control question" id="question9">
+                <select class="form-control question" id="question9" data-qId="8">
                     <option selected>Choose</option>
-                    <option>1(Strongly Disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5(Strongly Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Question 10</label>
-                <select class="form-control question" id="question10">
+                <select class="form-control question" id="question10" data-qId="9">
                     <option selected>Choose</option>
-                    <option>1(Strongly Disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5(Strongly Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
         </form>
@@ -147,15 +150,16 @@
         <button type="submit" class="btn btn-primary" id="submit">Submit</button>
         <hr>
         <footer class="footer">
-                <a href="/api/friends">
-                    <span class="glyphicon glyphicon-info-sign"></span> API Friends List</a> |
-                <a href="https://github.com/MridulaUdayaShankar/Friend-Finder-NodeJsApp">
-                    <span class="glyphicon glyphicon-link"></span> GitHub Repo</a>
+            <a href="/api/friends">
+                <span class="glyphicon glyphicon-info-sign"></span> API Friends List</a> |
+            <a href="https://github.com/MridulaUdayaShankar/Friend-Finder-NodeJsApp">
+                <span class="glyphicon glyphicon-link"></span> GitHub Repo</a>
         </footer>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal fade bd-example-modal-lg" id="match-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
@@ -164,7 +168,7 @@
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name"></h2>
-                    <img id="match-img" src="/images/DSC_4902.JPG" alt="">
+                    <img id="match-img" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -173,11 +177,42 @@
         </div>
     </div>
 
-    <!-- javascript files -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-    <script type="text/javascript" src="./app.js"></script>
+
+    <script type="text/javascript">
+        var ansArray = [];
+        $('.question').on('change', function (event) {
+            var targetElem = $(event.target);
+            //get question number 
+            // event.forEach(function (element) {
+            //     ansArray.push();
+            // });
+            var questionId = parseInt(targetElem.attr('data-qId'));
+            ansArray[questionId] = parseInt(targetElem.val());
+            console.log("ansArray.....", ansArray);
+        });
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            var quizResult = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val(),
+                score: ansArray
+            };
+            console.log('&&&&&&&', quizResult);
+            $.post("/api/friends", quizResult, function (data) {
+                console.log(data)
+                if (data) {
+                    console.log("data captured");
+                    console.log(data)
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
+                    $("#match-modal").modal("toggle");
+                }
+
+            });
+        })
+
+    </script>
+
 </body>
 
 </html>

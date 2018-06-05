@@ -7,6 +7,7 @@ module.exports = function(app) {
   });
   // A POST routes /api/friends
   app.post("/api/friends", function(req, res) {
+    console.log('request body', req.body);
     // code to handle incoming survey results
     var result = req.body;
     var name = "";
@@ -23,7 +24,10 @@ module.exports = function(app) {
     //code to handle the compatibility logic
     var userScore = result.score;
     var friendsScore = friends.scores;
-    userScore = userScore.map(Number);
+    for(var i = 0; i < userScore.length; i++){
+      userScore[i] = Number(userScore[i]);
+    }
+    console.log('userScore', userScore);
     // function compareScores(friends, userScore) {
     // for (var i = 0; i < friends.length; i++) {
     //   for (var j = 0; j < userScore.length; j++) {
@@ -37,17 +41,23 @@ module.exports = function(app) {
     //     console.log(score);
     //   }
     // }
+    var topFriend, lowScore = 100;
     friends.forEach(function(friend) {
       var scoreArr = friend.scores.map(function(item, index) {
         return Math.abs(item - userScore[index]);
       });
       //sum of all elements in the array
       var score = scoreArr.reduce((x, y) => x + y);
+      if(score < lowScore){
+        topFriend = friend;
+        lowScore = score;
+      }
       console.log("$$", score, "^^^^^^^^^", scoreArr);
     });
-    if (score < 10) {
-      res.json({ name: friends[index].name, photo: friends[index].photo });
-    }
+    console.log('top friend', topFriend, lowScore);
+
+    res.json({ name: topFriend.name, photo: topFriend.photo });
+    
     // friends.forEach(function(friend) {
     //   userScore.forEach(function(user) {
     //     console.log('**********', friend, friend.score);

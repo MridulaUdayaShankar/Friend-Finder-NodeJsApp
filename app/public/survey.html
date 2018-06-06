@@ -1,11 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FriendFinder</title>
 
     <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
     <!-- javascript files -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -13,9 +19,6 @@
 
     <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
-    <!-- Chosen -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
 
 </head>
 
@@ -36,7 +39,7 @@
             </div>
 
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Question 1</label>
+                <label for="exampleFormControlSelect1"> How extraverted/enthusiastic are you?</label>
                 <select class="form-control question" id="question1" data-qId="0">
                     <option selected>Choose</option>
                     <option>1</option>
@@ -47,7 +50,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Question 2</label>
+                <label for="exampleFormControlSelect1">How critical/quarrelsome are you?</label>
                 <select class="form-control question" id="question2" data-qId="1">
                     <option selected>Choose</option>
                     <option>1</option>
@@ -58,7 +61,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Question 3</label>
+                <label for="exampleFormControlSelect1">How dependable/self-disciplined do you think you are?</label>
                 <select class="form-control question" id="question3" data-qId="2">
                     <option selected>Choose</option>
                     <option>1</option>
@@ -69,7 +72,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Question 4</label>
+                <label for="exampleFormControlSelect1">How anxious/easily upset do you think you are?</label>
                 <select class="form-control question" id="question4" data-qId="3">
                     <option selected>Choose</option>
                     <option>1</option>
@@ -80,7 +83,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Question 5</label>
+                <label for="exampleFormControlSelect1">How open are you new experiences? </label>
                 <select class="form-control question" id="question5" data-qId="4">
                     <option selected>Choose</option>
                     <option>1</option>
@@ -91,7 +94,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Question 6</label>
+                <label for="exampleFormControlSelect1">How reserved/quiet do you think you are?</label>
                 <select class="form-control question" id="question6" data-qId="5">
                     <option selected>Choose</option>
                     <option>1</option>
@@ -102,7 +105,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Question 7</label>
+                <label for="exampleFormControlSelect1">How conventional/uncreative are you?</label>
                 <select class="form-control question" id="question7" data-qId="6">
                     <option selected>Choose</option>
                     <option>1</option>
@@ -113,7 +116,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Question 8</label>
+                <label for="exampleFormControlSelect1">How disorganized/careless are you?</label>
                 <select class="form-control question" id="question8" data-qId="7">
                     <option selected>Choose</option>
                     <option>1</option>
@@ -124,7 +127,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Question 9</label>
+                <label for="exampleFormControlSelect1">How calm/emotionally stable are you?</label>
                 <select class="form-control question" id="question9" data-qId="8">
                     <option selected>Choose</option>
                     <option>1</option>
@@ -135,7 +138,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Question 10</label>
+                <label for="exampleFormControlSelect1">How sympathetic/warm are you?</label>
                 <select class="form-control question" id="question10" data-qId="9">
                     <option selected>Choose</option>
                     <option>1</option>
@@ -163,7 +166,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
-                <div class="modal-header">                
+                <div class="modal-header">                  
                     <h2 class="modal-title">Match</h2>
                 </div>
                 <div class="modal-body">

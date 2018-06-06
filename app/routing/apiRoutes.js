@@ -53,7 +53,6 @@ module.exports = function (app) {
         topFriend = friend;
         lowScore = score;
       }
-      console.log("$$", score, "^^^^^^^^^", scoreArr);
     });
     console.log('top friend', topFriend, lowScore);
 

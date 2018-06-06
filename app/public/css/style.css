@@ -1,9 +1,33 @@
-.jumbotron{
-    text-align: center;
-    font-family: 'Bangers', cursive;
+/* header{
+    padding:50px;
+} */
+body{
+    background-image: url("http://bdfjade.com/data/out/105/6094296-friends-pics.jpg");
+    background-repeat: no-repeat;
 }
-
+.row-fluid{
+    text-align: center;
+    font-family: 'Bungee Inline', cursive;
+    padding:20px;
+}
+.container{
+    background: rgb(166, 216, 245);
+    padding:20px;
+    font-family:'Galindo', cursive;
+}
+.glyphicon{
+    color: maroon;
+}
 #match-img{
     width: 200px;
     height: 200px;
+}
+.footer{
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    min-height: 5%;
+    background: rgb(166, 216, 245);
 }
